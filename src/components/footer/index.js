@@ -81,7 +81,7 @@ function Footer() {
                 <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to='/' onClick={toggleHome}>
-                    KAMI
+                    BKINI STEADS
                     </SocialLogo>
                     <WebsiteRights>Kamijejetls {new Date().getFullYear()}
                     All Rights reserved.</WebsiteRights>

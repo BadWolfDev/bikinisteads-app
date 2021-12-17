@@ -30,6 +30,7 @@ font-size: 0.7rem;
 text-decoration: none;
 font-family: 'Montserrat', sans-serif;
 font-weight: 900;
+cursor: pointer;
 `;
 
 export const Logo = styled.img`

@@ -46,7 +46,7 @@ const Navbar = ({ toggle }) => {
 
     return (
         <Nav scrollNav={scrollNav}>
-            <Logo to='/' onClick={toggleHome} src={Kami}></Logo>
+            <LogoC to='/' onClick={toggleHome}>Bikini Steads</LogoC>
             <MobileIcon onClick={toggle}>
                 <FaBars />
             </MobileIcon>

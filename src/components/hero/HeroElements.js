@@ -3,13 +3,12 @@ import {IoMdArrowRoundForward} from 'react-icons/io';
 import {IoArrowForward, IoArrowBack} from 'react-icons/io5';
 
 export const HeroSection = styled.section`
-height: 100vh;
-max-height: 1100px;
 position: relative;
 overflow: hidden;
 justify-content: center;
 align-items: center;
 display: flex;
+background-color: black;
 
 @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -21,7 +20,7 @@ display: flex;
 `;
 
 export const Title = styled.h1`
-text-align: center;
+text-align: right;
 padding-top: 24px;
 font-size: 48px;
 line-height: 1.1;
@@ -34,14 +33,18 @@ color: red;
 `;
 
 export const HeroWrapper = styled.div`
-width: 100%;
-height: 100%;
+width: 35%;
+top: 8rem;
+left: 6rem;
 display: flex;
 justify-content: center;
 align-items: center;
 overflow: hidden;
 position: relative;
-background: #2F5596;
+background: url(${(props)=>props.imgURL});
+background-size: contain;
+background-repeat: no-repeat;
+
 
 &::before{
     position: absolute;

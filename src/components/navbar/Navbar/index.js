@@ -5,7 +5,7 @@ import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 import  {SocialIcons, SocialIconLink} from "../../footer/FooterElements";
 import { FaDiscord, FaTwitter } from "react-icons/fa";
-import Kami from "../../../images/kamiicon.svg";
+import BikiniSteads from "../../../images/bikiLogo.png";
 
 
 const Navbar = ({ toggle }) => {
@@ -13,7 +13,7 @@ const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
-        if(window.scrollY >= 80){
+        if(window.scrollY >= 400){
             setScrollNav(true)
         }else{
             setScrollNav(false)
@@ -46,7 +46,6 @@ const Navbar = ({ toggle }) => {
 
     return (
         <Nav scrollNav={scrollNav}>
-            <LogoC to='/' onClick={toggleHome}>Bikini Steads</LogoC>
             <MobileIcon onClick={toggle}>
                 <FaBars />
             </MobileIcon>
@@ -67,10 +66,10 @@ const Navbar = ({ toggle }) => {
                     </NavItem>))}
             </NavMenu>
             <SocialIcons>
-                <SocialIconLink onPointerOver={() => setHover(true)} onPointerOut={() => setHover(false)} href="https://twitter.com/" target='_blank' aria-label='twitter' style={SocialColorT({ hover })}>
+                <SocialIconLink onPointerOver={() => setHover(true)} onPointerOut={() => setHover(false)} href="https://twitter.com/BikiniSteads?s=20" target='_blank' aria-label='twitter' style={SocialColorT({ hover })}>
                     <FaTwitter />
                 </SocialIconLink>
-                <SocialIconLink onPointerOver={() => setHover(true)} onPointerOut={() => setHover(false)} href="https://discord.com/" target='_blank' aria-label='discord' style={SocialColorD({ hover })}>
+                <SocialIconLink onPointerOver={() => setHover(true)} onPointerOut={() => setHover(false)} href="https://t.co/ZWQb9KKurf" target='_blank' aria-label='discord' style={SocialColorD({ hover })}>
                     <FaDiscord />
                 </SocialIconLink>
             </SocialIcons>

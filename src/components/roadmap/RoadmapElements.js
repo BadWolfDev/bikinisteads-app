@@ -164,4 +164,5 @@ line-height: 30px;
 font-weight: 300;
 color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
 font-family: 'Montserrat','sans-serif';
+text-align: justify;
 `;

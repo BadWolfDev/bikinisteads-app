@@ -2,27 +2,24 @@ import About from '../images/about.svg';
 import Road from '../images/roadmap.svg';
 import Mint from '../images/mint.svg';
 import FAQ from '../images/faq.svg';
-import Kami from '../images/kami.svg';
-import Kami1 from '../images/kami-1.jpg';
-import Kami2 from '../images/kami-2.jpg';
-import Kami3 from '../images/kami-3.jpg';
-import Kami4 from '../images/kami-4.jpg';
+import BikiniSteadss from '../images/bikiLogo.png';
 
 export const heroObj = {
     id: 'home',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: true,
-    topLine: 'Premium Kami',
-    headLine: 'Kami is da wae brudahs',
-    description: 'We are Kami, passionate about the Universe and all its forms of expression',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: false,
+    topLine: 'BkS',
+    headLine: 'Welcome',
+    description: 'Down in the deep blue sea, lies the county of Solana bottom. 3 Neighborhoods fight for power, honor, and greed. Corruption lives on every corner and in every office.  Money is king and everyone wants a piece of the action. Only the Mayors mansion can contain all the chaos, because with great power, comes even greater corruption. Deep in the heart of the city lies Shell Bank. Every deal, racket, and dime bag, a piece gets kicked back to the bank. If you think otherwise, the mayor will send a couple of the boys to put your paper hands in a vice and your pearls in a clamp. If you gonna make it in this city, you better not be a fool.',
     buttonLabel: 'Mint',
     imgStart: true,
-    img: [Kami1, Kami2, Kami3, Kami4],
+    img: BikiniSteadss,
     alt: 'kami',
-    dark: true,
-    primary: true,
-    darkText: true
+    dark: false,
+    primary: false,
+    darkText: false,
+    show: true,
 };
 
 export const aboutObj = {
@@ -40,7 +37,7 @@ export const aboutObj = {
     dark: true,
     primary: true,
     darkText: true,
-    show: false,
+    show: true,
 };
 
 export const RoadmapObj = {
@@ -68,7 +65,7 @@ export const mintObj = {
     dark: true,
     primary: true,
     darkText: true,
-    show: true,
+    show: false,
 };
 
 export const faqObj = {
@@ -86,5 +83,6 @@ export const faqObj = {
     alt: 'faqs',
     dark: true,
     primary: true,
-    darkText: true
+    darkText: true,
+    show: false,
 };

@@ -23,7 +23,8 @@ const Home = () => {
         <>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle}/>
-        <Hero slides={SliderData} {...heroObj}/>
+        {/*<Hero slides={SliderData} {...heroObj}/>*/}
+        <Standard {...heroObj}/>
         <Standard {...aboutObj}/>
         <Roadmap {...RoadmapObj}/>
         <Standard {...mintObj}/>

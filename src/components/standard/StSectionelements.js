@@ -60,6 +60,7 @@ text-transform: uppercase;
 margin-bottom: 16px;
 font-family: 'Montserrat', sans-serif;
 text-transform: uppercase;
+text-align: justify;
 `;
 
 
@@ -82,6 +83,7 @@ max-width: 440px;
 margin-bottom: 35px;
 font-size: 14px;
 line-height: 24px;
+text-align: justify;
 color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 font-family: 'Montserrat', sans-serif;
 text-transform: uppercase;

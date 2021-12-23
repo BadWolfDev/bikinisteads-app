@@ -86,10 +86,10 @@ function Footer() {
                     <WebsiteRights>Kamijejetls {new Date().getFullYear()}
                     All Rights reserved.</WebsiteRights>
                     <SocialIcons>
-                        <SocialIconLink onPointerOver={() => setHover(true)} onPointerOut={() => setHover(false)} href="https://twitter.com/home" target='_blank' aria-label='twitter' style={SocialColorT({hover})}>
+                        <SocialIconLink onPointerOver={() => setHover(true)} onPointerOut={() => setHover(false)} href="https://twitter.com/BikiniSteads?s=20" target='_blank' aria-label='twitter' style={SocialColorT({hover})}>
                             <FaTwitter/>
                         </SocialIconLink>
-                        <SocialIconLink onPointerOver={() => setHover(true)} onPointerOut={() => setHover(false)} href="https://discord.com/" target='_blank' aria-label='discord' style={SocialColorD({hover})}>
+                        <SocialIconLink onPointerOver={() => setHover(true)} onPointerOut={() => setHover(false)} href="https://t.co/ZWQb9KKurf" target='_blank' aria-label='discord' style={SocialColorD({hover})}>
                             <FaDiscord/>
                         </SocialIconLink>
                     </SocialIcons>

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll'
 
 export const Button = styled(Link)`
-background: ${({ primary }) => (primary ? 'red' : 'black')};
+background: ${({ primary }) => (primary ? '#699b86' : 'black')};
 display: ${({show}) => (show ? 'none' : 'flex')};
 white-space: nowrap;
 outline: none;
@@ -12,7 +12,6 @@ max-width: 200px;
 cursor: pointer;
 text-decoration: none;
 transition: 0.3s;
-display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 1px;
@@ -28,6 +27,6 @@ text-transform: uppercase;
 &:hover {
     transition: all 0.2s ease-in-out;
     transform: translateY(-1px);
-    background: ${({ primary }) => (primary ? 'black' : 'red')}
+    background: ${({ primary }) => (primary ? 'black' : '#699b86')}
 }
 `

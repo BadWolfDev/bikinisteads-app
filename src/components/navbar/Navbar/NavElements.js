@@ -13,7 +13,7 @@ z-index: 10;
 position: fixed;
 width: 100%;
 top: 0;
-background: #fff;
+background: ${({scrollNav}) => (scrollNav ? "#fff" : "transparent")};
 box-shadow: ${({scrollNav}) => (scrollNav ? "0 1px 3px #010606" : 'none')};
 transition: all 0.3s ease-in-out;
 
@@ -23,10 +23,10 @@ transition: all 0.3s ease-in-out;
 `;
 
 export const LogoC = styled.div`
-color: red;
+color: #0B5D33;
 align-items: center;
 padding: 0 1rem;
-font-size: 0.7rem;
+font-size: 1rem;
 text-decoration: none;
 font-family: 'Montserrat', sans-serif;
 font-weight: 900;
@@ -35,8 +35,8 @@ cursor: pointer;
 
 export const Logo = styled.img`
 padding: 0;
-width: 2.5rem;
-height: 3rem;;
+width: 5rem;
+height: 4rem;
 left: 0;
 margin: 0;
 cursor: pointer;
@@ -85,7 +85,7 @@ display: none;
 `;
 
 export const NavMenuLinks = styled(LinkS)`
-color: #010606;
+color: #ACAEAD;
 display: flex;
 width: 100%;
 align-items: center;
@@ -99,13 +99,13 @@ text-decoration: none;
 text-transform: uppercase;
 
 &:hover {
-    color: red;
-    border-bottom: 3.5px solid red;
+    color: #699b86;
+    border-bottom: 3.5px solid #699b86;
 };
 
 &.active {
-    color: red;
-    border-bottom: 3.5px solid red;
+    color: #699b86;
+    border-bottom: 3.5px solid #699b86;
 };
 
 `;
@@ -120,7 +120,7 @@ align-items: center;
 `;
 
 export const NavBtnlink = styled(LinkR)`
-background: ${({ primary }) => (primary ? 'black' : 'red')};
+background: ${({ primary }) => (primary ? '#699b86' : '#ACAEAD')};
 white-space: nowrap;
 outline: none;
 border: none;
@@ -146,6 +146,6 @@ text-transform: uppercase;
 &:hover {
     transition: all 0.2s ease-in-out;
     transform: translateY(-1px);
-    background: ${({ primary }) => (primary ? 'red' : 'black')};
+    background: ${({ primary }) => (primary ? '#ACAEAD' : '#699b86')};
 }
 `;
